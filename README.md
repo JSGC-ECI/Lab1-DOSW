@@ -1,6 +1,5 @@
 # Lab1-DOSW
 
 
-Cambio colaborador!
+Cambio colaborador con intellij
 
-cambio colaborador 2.
