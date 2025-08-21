@@ -5,6 +5,17 @@
 
 ## Preguntas
 ### Parte ll
+**Averigua para qué sirve y como se usan estos comandos** 
+```bash
+git add
+```
+Agrega archivos nuevos o modificados en su directorio de trabajo al área de almacenamiento temporal de Git.
+```bash
+git commit` -m “mensaje”
+```
+Registrar cambios en el repositorio
+Se agrega un mensaje de confirmación
+
 **¿Que sucedió?**       
 Un integrante fue el unico que logro exitosamente subir los cambios mientras que el otro tuvo un error al tener cambios sin actualizar
 
@@ -17,6 +28,7 @@ Una solicitud para generar cambios realizados en otras ramas a la rama principal
 
 
 
+---
 
 > [!NOTE]
 > Este archivo solo contiene la solución a los cuestionamientos planteados     
