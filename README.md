@@ -5,13 +5,20 @@
 
 ## Preguntas
 ### Parte ll
-¿Que sucedió?
+**¿Que sucedió?**       
 Un integrante fue el unico que logro exitosamente subir los cambios mientras que el otro tuvo un error al tener cambios sin actualizar
 
 
 ### PARTE III 
-¿Hay una mejor forma de trabajar con git para no tener conflictos?
-Con el uso de ramas generando pull request y merge
-¿Qué es y como funciona el Pull Request?
+**¿Hay una mejor forma de trabajar con git para no tener conflictos?**     
+Con el uso de ramas generando pull request y merge    
+**¿Qué es y como funciona el Pull Request?**     
 Una solicitud para generar cambios realizados en otras ramas a la rama principal
+
+
+
+
+> [!NOTE]
+> Este archivo solo contiene la solución a los cuestionamientos planteados     
+> Para visualizar las evidencias de acciones a realizar por favor revisa el historial
 
