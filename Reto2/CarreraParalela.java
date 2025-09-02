@@ -13,23 +13,10 @@ public class CarreraParalela {
     private static int numero(){
         return 0;
     }
-    private static int minimoNumero(){
-        System.out.println("Ingrese los números separados por espacio:");
-        try (Scanner scanner = new Scanner(System.in)) {
-            String linea = scanner.nextLine();
-            return Arrays.stream(linea.trim().split("\\s+"))
-                .filter(s -> !s.isEmpty())
-                .map(s -> {
-                    try {
-                        return Integer.parseInt(s);
-                    } catch (NumberFormatException e) {
-                        return null;
-                    }
-                })
-                .filter(Objects::nonNull)
+    private static int minimoNumero(List<Integer> numeros){
+        return numeros.stream()
                 .min(Integer::compareTo)
                 .orElse(Integer.MAX_VALUE);
-        }
     }
 }
 
