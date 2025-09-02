@@ -28,6 +28,10 @@ public class CarreraParalela {
                 .min(Integer::compareTo)
                 .orElse(Integer.MAX_VALUE);
     }
+
+    public static List<Integer> MayorNum(List<Integer> lista) {
+        return lista;
+    }
 }
 
 
