@@ -39,8 +39,16 @@ public class CarreraParalela {
     private static List<Integer> calcular (List<Integer> lista){
         int max = mayorNumero(lista);
         int min = minimoNumero(lista);
-        return Stream.of(max,min).collect(Collectors.toList());
+        lista = Stream.of(max,min).collect(Collectors.toList());
+        String esDivisorDe2 = (max % 2 == 0) ? "Es divisor de 2" : "No es divisor de 2";
+        System.out.println(esDivisorDe2);
+        int count = (int) lista.stream().count();
+        String esImpar = (count % 2 == 0) ? "No es impar" : "Es impar";
+        System.out.println(esImpar);
+        return lista;
     }
+
+
  
 }
 
