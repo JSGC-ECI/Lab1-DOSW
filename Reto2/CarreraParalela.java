@@ -36,7 +36,16 @@ public class CarreraParalela {
     }
 
     private static List<Integer> calcular (List<Integer> lista){
+        int mayor = numeros.get(0);
+        int menor = numeros.get(0);
 
+        for (int n : numeros) {
+            if (n > mayor) {
+                mayor = n;
+            }
+            if (n < menor) {
+                menor = n;
+            }
     }
  
 }
