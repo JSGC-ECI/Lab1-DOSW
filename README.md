@@ -37,6 +37,8 @@ Una solicitud para generar cambios realizados en otras ramas a la rama principal
 ### Evidencias
 #### RETO #1: La Bienvenida 
 <img width="1868" height="193" alt="image" src="https://github.com/user-attachments/assets/70c6be8b-e5df-4a59-8444-43797e8069da" />
+<img width="374" height="160" alt="image" src="https://github.com/user-attachments/assets/e5cc5db9-4c06-45a0-8def-15c981cec83b" />
+
 
 
 
