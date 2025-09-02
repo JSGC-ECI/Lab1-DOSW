@@ -35,17 +35,27 @@ public class CarreraParalela {
                 .orElse(Integer.MIN_VALUE); 
     }
 
-    private static List<Integer> calcular (List<Integer> lista){
-        int mayor = numeros.get(0);
-        int menor = numeros.get(0);
+    private static void calcular(List<Integer> lista) {
+        int mayor = lista.get(0);
+        int menor = lista.get(0);
 
-        for (int n : numeros) {
+        for (int n : lista) {
             if (n > mayor) {
                 mayor = n;
             }
             if (n < menor) {
                 menor = n;
             }
+        }
+
+        //  mayor múltiplo de 2
+        String resultadoMayor = (mayor % 2 == 0) ? "El mayor es múltiplo de 2" : "El mayor no es múltiplo de 2";
+        System.out.println(resultadoMayor);
+
+        // tamaño par o impar
+        String resultadoParidad = (lista.size() % 2 == 0) ? "La lista tiene cantidad par de datos" : "La lista tiene cantidad impar de datos";
+        System.out.println("Cantidad de elementos: " + lista.size());
+        System.out.println(resultadoParidad);
     }
  
 }
