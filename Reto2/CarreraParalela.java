@@ -2,6 +2,7 @@
 
 package Reto2;
 import java.util.*;
+import java.util.stream.*;
 
 public class CarreraParalela {
     public static void main(String[] args) {
@@ -36,7 +37,9 @@ public class CarreraParalela {
     }
 
     private static List<Integer> calcular (List<Integer> lista){
-
+        int max = mayorNumero(lista);
+        int min = minimoNumero(lista);
+        return Stream.of(max,min).collect(Collectors.toList());
     }
  
 }
