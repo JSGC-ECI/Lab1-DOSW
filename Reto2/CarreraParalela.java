@@ -35,6 +35,10 @@ public class CarreraParalela {
                 .orElse(Integer.MIN_VALUE); 
     }
 
+    private static List<Integer> calcular (List<Integer> lista){
+
+    }
+ 
 }
 
 
