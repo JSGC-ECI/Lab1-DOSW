@@ -40,6 +40,7 @@ public class CarreraParalela {
     private static List<Integer> calcular (List<Integer> lista){
         int max = mayorNumero(lista);
         int min = minimoNumero(lista);
+<<<<<<< HEAD
 
         //  mayor múltiplo de 2
         String resultadoMayor = (mayor % 2 == 0) ? "El mayor es múltiplo de 2" : "El mayor no es múltiplo de 2";
@@ -55,11 +56,18 @@ public class CarreraParalela {
         String esDivisorDe2 = (max % 2 == 0) ? "Es divisor de 2" : "No es divisor de 2";
         System.out.println(esDivisorDe2);
         
+=======
+        lista = Stream.of(max,min).collect(Collectors.toList());
+        String esDivisorDe2 = (max % 2 == 0) ? "Es divisor de 2" : "No es divisor de 2";
+        System.out.println(esDivisorDe2);
+>>>>>>> 471b574bef673a1a57121d3585081a1ef0ece242
         int count = (int) lista.stream().count();
         String esImpar = (count % 2 == 0) ? "No es impar" : "Es impar";
         System.out.println(esImpar);
         return lista;
     }
+
+
  
 }
 
