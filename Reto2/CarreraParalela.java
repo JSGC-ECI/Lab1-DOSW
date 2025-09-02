@@ -36,10 +36,29 @@ public class CarreraParalela {
                 .orElse(Integer.MIN_VALUE); 
     }
 
+<<<<<<< HEAD
     private static List<Integer> calcular (List<Integer> lista){
         int max = mayorNumero(lista);
         int min = minimoNumero(lista);
-        return Stream.of(max,min).collect(Collectors.toList());
+
+        //  mayor múltiplo de 2
+        String resultadoMayor = (mayor % 2 == 0) ? "El mayor es múltiplo de 2" : "El mayor no es múltiplo de 2";
+        System.out.println(resultadoMayor);
+
+        // tamaño par o impar
+        String resultadoParidad = (lista.size() % 2 == 0) ? "La lista tiene cantidad par de datos" : "La lista tiene cantidad impar de datos";
+        System.out.println("Cantidad de elementos: " + lista.size());
+        System.out.println(resultadoParidad);
+
+
+        lista = Stream.of(max,min).collect(Collectors.toList());
+        String esDivisorDe2 = (max % 2 == 0) ? "Es divisor de 2" : "No es divisor de 2";
+        System.out.println(esDivisorDe2);
+        
+        int count = (int) lista.stream().count();
+        String esImpar = (count % 2 == 0) ? "No es impar" : "Es impar";
+        System.out.println(esImpar);
+        return lista;
     }
  
 }
