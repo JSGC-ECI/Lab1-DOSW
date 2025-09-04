@@ -7,7 +7,7 @@ public class Tesoro {
 
     public static void almacenar(List<Map.Entry<String, Integer>> pares) {
         for (Map.Entry<String, Integer> par : pares) {
-            almacenar.putIfAbsent(par.getKey(), par.getValue()); // conserva primer valor
+            almacenar.putIfAbsent(par.getKey(), par.getValue());
         }
     }
 
