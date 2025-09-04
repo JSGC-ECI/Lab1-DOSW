@@ -21,9 +21,6 @@ public class Tesoro {
 
             return tesoroComun;
     }
-
-
-
     
     public static void almacenar(List<Map.Entry<String, Integer>> pares) {
         for (Map.Entry<String, Integer> par : pares) {
