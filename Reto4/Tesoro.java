@@ -1,11 +1,12 @@
 package Reto4;
-import java.util.stream.*;
 import java.util.*;
+
 public class Tesoro {
-    public static Map<String, Integer> almacenar(List<Map.Entry<String, Integer>> pares) {
-        Map<String, Integer> mapa = new HashMap<>();
+
+    private Map<String, Integer> almacenar = new HashMap<>();
+
+    public void almacenar(List<Map.Entry<String, Integer>> pares) {
         for (Map.Entry<String, Integer> par : pares) {
-            mapa.putIfAbsent(par.getKey(), par.getValue()); // conserva el primero
+            almacenar.putIfAbsent(par.getKey(), par.getValue()); // conserva primer valor
         }
-        return mapa;
-}
+    }
