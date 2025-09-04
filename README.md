@@ -39,6 +39,12 @@ Una solicitud para generar cambios realizados en otras ramas a la rama principal
 <img width="1868" height="193" alt="image" src="https://github.com/user-attachments/assets/70c6be8b-e5df-4a59-8444-43797e8069da" />
 <img width="374" height="160" alt="image" src="https://github.com/user-attachments/assets/e5cc5db9-4c06-45a0-8def-15c981cec83b" />
 
+#### RETO #2: Carrera en Paralelo
+<img width="1239" height="917" alt="image" src="https://github.com/user-attachments/assets/e7945789-48b6-4c30-8e1f-6a14c611f864" />
+<img width="1257" height="941" alt="image" src="https://github.com/user-attachments/assets/20476a7b-f703-4272-af1f-41e25b323f59" />
+
+
+
 
 
 
