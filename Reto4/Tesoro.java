@@ -1,6 +1,6 @@
 package Reto4;
-import java.util.stream.*;
 import java.util.*;
+
 public class Tesoro {
     private static Hashtable<String, Integer> tesorosHashtable = new Hashtable<>();
 
@@ -19,5 +19,16 @@ public class Tesoro {
 
             return tesoroComun;
     }
+
+
+
+    private static Map<String, Integer> tesoro = new HashMap<>();
+
+    public static void almacenar(List<Map.Entry<String, Integer>> pares) {
+        for (Map.Entry<String, Integer> par : pares) {
+            almacenar.putIfAbsent(par.getKey(), par.getValue());
+        }
+    }
+
 
 }
