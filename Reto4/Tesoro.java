@@ -16,4 +16,13 @@ public class Tesoro {
                 System.out.println("Clave: " + k + " | Valor: " + v)
         );
     }
+
+    public Map<String, Integer> combinar(Map<String, Integer> hashMap, Hashtable<String, Integer> hashTable) {
+        Map<String, Integer> combinado = new HashMap<>(hashMap);
+
+        hashTable.forEach((k, v) -> combinado.put(k, v));
+
+        return combinado;
+    }
+
 }
