@@ -43,8 +43,5 @@ Una solicitud para generar cambios realizados en otras ramas a la rama principal
 <img width="1239" height="917" alt="image" src="https://github.com/user-attachments/assets/e7945789-48b6-4c30-8e1f-6a14c611f864" />
 <img width="1257" height="941" alt="image" src="https://github.com/user-attachments/assets/20476a7b-f703-4272-af1f-41e25b323f59" />
 
-
-
-
-
-
+#### RETO #3: El eco misterioso 
+<img width="1023" height="197" alt="image" src="https://github.com/user-attachments/assets/cdc604d7-36f3-4337-84cd-cda28d2bf12c" />
