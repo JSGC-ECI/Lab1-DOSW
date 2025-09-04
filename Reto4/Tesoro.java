@@ -42,7 +42,9 @@ public class Tesoro {
     }
     public static void imprimir(Map<String, Integer> tesoroComun){
         tesoroComun = ordenarAntesDeImprimir(tesoroComun);
-
+        tesoroComun.entrySet().stream()
+            .map(e -> "Clave: " + e.getKey().toUpperCase() + " | Valor: " + e.getValue())
+            .forEach(System.out::println);
     }
 
 }
