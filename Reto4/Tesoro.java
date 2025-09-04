@@ -11,6 +11,9 @@ public class Tesoro {
         }
     }
 
-    public static Map<String, Integer> obtenerTesoro(HashMap<String, Integer> tesorosHashMap,Hashtable<String, Integer> tesorosHashtable)
+    public static Map<String, Integer> obtenerTesoro(HashMap<String, Integer> tesorosHashMap,Hashtable<String, Integer> tesorosHashtable){
+        Map<String,Integer> combinado = new HashMap<>(hashMap);
+        combinado.putAll(hashTable);
 
+    }
 }
