@@ -12,16 +12,28 @@ public class CarreraParalela {
         System.out.println(resultados);
     }
 
+    private static int minimoNumero(List<Integer> numeros){
+        return numeros.stream()
+                .min(Integer::compareTo)
+                .orElse(Integer.MAX_VALUE);
+    }
+
+    private static int mayorNumero(List<Integer> numeros) {
+        return numeros.stream()
+                .max(Integer::compareTo)
+                .orElse(Integer.MIN_VALUE); 
+    }
+
     /**
      * Fusión de toda la lógica: analiza dos listas y retorna el objeto Resultados.
      */
     public static Resultados calcularResultados(List<Integer> lista1, List<Integer> lista2) {
-        int max1 = lista1.stream().max(Integer::compareTo).orElse(Integer.MIN_VALUE);
-        int min1 = lista1.stream().min(Integer::compareTo).orElse(Integer.MAX_VALUE);
+        int max1 = mayorNumero(lista1);
+        int min1 = minimoNumero(lista1);
         int cantidad1 = lista1.size();
 
-        int max2 = lista2.stream().max(Integer::compareTo).orElse(Integer.MIN_VALUE);
-        int min2 = lista2.stream().min(Integer::compareTo).orElse(Integer.MAX_VALUE);
+        int max2 = mayorNumero(lista2);
+        int min2 = minimoNumero(lista2);
         int cantidad2 = lista2.size();
 
         // Condiciones con if ternario
