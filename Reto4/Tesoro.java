@@ -1,8 +1,10 @@
 package Reto4;
 import java.util.*;
+import java.util.stream.*;
 
 public class Tesoro {
     private static Hashtable<String, Integer> tesorosHashtable = new Hashtable<>();
+    private static Map<String, Integer> tesoro = new HashMap<>();
 
     public static void almacenarHashtable(List<Map.Entry<String, Integer>> pares){
         
@@ -22,13 +24,25 @@ public class Tesoro {
 
 
 
-    private static Map<String, Integer> tesoro = new HashMap<>();
-
+    
     public static void almacenar(List<Map.Entry<String, Integer>> pares) {
         for (Map.Entry<String, Integer> par : pares) {
-            almacenar.putIfAbsent(par.getKey(), par.getValue());
+            tesoro.putIfAbsent(par.getKey(), par.getValue());
         }
     }
+    public static Map<String, Integer> ordenarAntesDeImprimir(Map<String, Integer> tesoroComun){
+        return tesoroComun.entrySet().stream()
+            .sorted(Map.Entry.comparingByKey())
+            .collect(Collectors.toMap(
+                Map.Entry::getKey,
+                Map.Entry::getValue,
+                (e1, e2) -> e1,
+                LinkedHashMap::new
+            ));
+    }
+    public static void imprimir(Map<String, Integer> tesoroComun){
+        tesoroComun = ordenarAntesDeImprimir(tesoroComun);
 
+    }
 
 }
