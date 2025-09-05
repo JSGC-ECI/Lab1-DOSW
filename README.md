@@ -50,3 +50,7 @@ Una solicitud para generar cambios realizados en otras ramas a la rama principal
 
 <img width="289" height="139" alt="image" src="https://github.com/user-attachments/assets/e797607d-aada-48d4-8dc3-d32627500e5a" />
 
+#### RETO #5: Batalla de Conjuntos
+
+<img width="357" height="132" alt="image" src="https://github.com/user-attachments/assets/e6fdf045-d2c3-4001-8921-0d6693e50fe5" />
+
