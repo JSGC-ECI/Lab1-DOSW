@@ -17,7 +17,18 @@ public class MaquinaDecisiones {
             case "DANZAR":
                 System.out.println("Girando en modo fiesta.");
                 break;
-
+            case "BROMEAR":
+                System.out.println("¿Por qué la RAM rompió con la CPU? Porque necesitaba espacio...");
+                break;
+            case "GRITAR":
+                System.out.println("¡¡¡ALERTA DE STACK OVERFLOW!!!");
+                break;
+            case "SUSURRAR":
+                System.out.println("Shhh... los bugs están dormidos.");
+                break;
+            case "ANALIZAR":
+                System.out.println("Analizando datos... resultado: ¡Eres increíble programando!");
+                break;
             default:
                 System.out.println("Decisión no reconocida.");
                 break;
@@ -27,5 +38,6 @@ public class MaquinaDecisiones {
     public static void main(String[] args) {
         decisiones("SALUDAR");
     }
+
     
 }
