@@ -3,35 +3,34 @@ package Reto5;
 import java.util.*;
 
 public class BatallaConjuntos {
-    private static TreeSet<Integer> resultado = new TreeSet<>();
-
-    public static TreeSet<Integer> almacenar(List<Integer> numeros) {
-        // Guardar solo números que NO sean múltiplos de 5
-        numeros.stream()
+    public static TreeSet<Integer> almacenarTreeSet(List<Integer> numeros) {
+        return numeros.stream()
                 .filter(i -> i % 5 != 0)
-                .forEach(resultado::add);
-        return resultado;
+                .collect(TreeSet::new, TreeSet::add, TreeSet::addAll);
+    }
+
+    public static HashSet<Integer> almacenarHashSet(List<Integer> numeros) {
+        return numeros.stream()
+                .filter(i -> i % 3 != 0)
+                .collect(HashSet::new, HashSet::add, HashSet::addAll);
     }
 
     public static TreeSet<Integer> unir(HashSet<Integer> conjunto1, TreeSet<Integer> conjunto2) {
-        // Unimos ambos conjuntos en un solo TreeSet (ordenado y sin duplicados)
-        TreeSet<Integer> union = new TreeSet<>();
-        union.addAll(conjunto1);
-        union.addAll(conjunto2);
+        TreeSet<Integer> resultadoUnido = new TreeSet<>();
+        resultadoUnido.addAll(conjunto1);
+        resultadoUnido.addAll(conjunto2);
+        return resultadoUnido;
+    }
 
-        // Filtrar múltiplos de 3
-        union.removeIf(n -> n % 3 == 0);
-
-        // Imprimir con lambda
-        union.forEach(n -> System.out.println("Número en arena: " + n));
-
-        return union;
+    public static void imprimir(TreeSet<Integer> conjunto) {
+        conjunto.stream()
+                .forEach(n -> System.out.println("Número en arena: " + n));
     }
 
     public static void main(String[] args) {
-        HashSet<Integer> hashSet = new HashSet<>(Arrays.asList(4, 9, 15, 7, 18, 21, 10, 5));
-        TreeSet<Integer> treeSet = new TreeSet<>(Arrays.asList(12, 3, 25, 10, 7, 30, 18, 4));
-
-        unir(hashSet, treeSet);
+        HashSet<Integer> hashSetResultado = almacenarHashSet(Arrays.asList(4, 9, 15, 7, 18, 21, 10, 5));
+        TreeSet<Integer> treeSetResultado = almacenarTreeSet(Arrays.asList(12, 3, 25, 10, 7, 30, 18, 4));
+        TreeSet<Integer> resultadoUnido = unir(hashSetResultado, treeSetResultado);
+        imprimir(resultadoUnido);
     }
 }
