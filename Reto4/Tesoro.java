@@ -45,34 +45,24 @@ public class Tesoro {
     }
 
     public static void main(String[] args) {
-        // Pares para el HashMap
         List<Map.Entry<String, Integer>> paresHashMap = List.of(
             Map.entry("oro", 5),
             Map.entry("plata", 3),
             Map.entry("oro", 7),
             Map.entry("diamante", 10)
         );
-        HashMap<String, Integer> hashMap = new HashMap<>();
-        for (Map.Entry<String, Integer> par : paresHashMap) {
-            hashMap.put(par.getKey(), par.getValue());
-        }
-
-        // Pares para el Hashtable
         List<Map.Entry<String, Integer>> paresHashtable = List.of(
             Map.entry("plata", 8),
             Map.entry("rubí", 4),
             Map.entry("oro", 12),
             Map.entry("esmeralda", 6)
         );
-        Hashtable<String, Integer> hashtable = new Hashtable<>();
-        for (Map.Entry<String, Integer> par : paresHashtable) {
-            hashtable.put(par.getKey(), par.getValue());
-        }
 
-        // Obtener el tesoro combinado
-        Map<String, Integer> tesoroComun = obtenerTesoro(hashMap, hashtable);
+        almacenar(paresHashMap); 
+        almacenarHashtable(paresHashtable); 
 
-        // Imprimir el tesoro ordenado
+        Map<String, Integer> tesoroComun = obtenerTesoro(new HashMap<>(tesoro), tesorosHashtable);
+
         imprimir(tesoroComun);
     }
 }
