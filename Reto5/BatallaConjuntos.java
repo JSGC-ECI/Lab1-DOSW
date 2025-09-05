@@ -1,6 +1,7 @@
 package Reto5;
 
 import java.util.*;
+import java.util.stream.*;
 
 public class BatallaConjuntos {
     public static TreeSet<Integer> almacenarTreeSet(List<Integer> numeros) {
