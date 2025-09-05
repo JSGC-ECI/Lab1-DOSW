@@ -45,3 +45,6 @@ Una solicitud para generar cambios realizados en otras ramas a la rama principal
 
 #### RETO #3: El eco misterioso 
 <img width="1023" height="197" alt="image" src="https://github.com/user-attachments/assets/cdc604d7-36f3-4337-84cd-cda28d2bf12c" />
+### RETO #4: El tesoro de las Llaves duplicadas
+![0ac9e575-8e68-434c-a275-6738d657f5a1](https://github.com/user-attachments/assets/391fde4b-012d-46f2-ab4d-5d76565771f1)
+
