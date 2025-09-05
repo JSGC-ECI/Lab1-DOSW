@@ -54,3 +54,8 @@ Una solicitud para generar cambios realizados en otras ramas a la rama principal
 
 <img width="357" height="132" alt="image" src="https://github.com/user-attachments/assets/e6fdf045-d2c3-4001-8921-0d6693e50fe5" />
 
+
+#### RETO #6: La máquina de decisiones
+
+<img width="850" height="88" alt="image" src="https://github.com/user-attachments/assets/348b8b7a-56cb-4f50-b50a-0827a560bb47" />
+
